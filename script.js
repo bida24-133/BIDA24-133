@@ -1,0 +1,1 @@
+function showAlert() { alert('Thank you for choosing Char's Touch! This is just a demo.'); }

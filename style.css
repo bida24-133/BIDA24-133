@@ -1,0 +1,134 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFF3E0;
+  color: #3E2723;
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(to right, #6D4C41, #5D4037);
+  color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #F8BBD0;
+  color: #4E342E;
+  border-radius: 5px;
+}
+.intro, .form-section {
+  padding: 40px 30px;
+  text-align: center;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.tab {
+  background-color: #FFE0B2;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 10px;
+  color: #6D4C41;
+}
+.card p {
+  margin: 10px;
+  font-size: 0.95rem;
+}
+.card button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #F8BBD0;
+  border: none;
+  color: #4E342E;
+  cursor: pointer;
+  border-radius: 5px;
+}
+footer {
+  background-color: #4E342E;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+form button {
+  background-color: #6D4C41;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #5D4037;
+}
+video {
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
